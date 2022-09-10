@@ -146,6 +146,10 @@
 #navbar-area .container .btn li:hover .submenu {
   height: 200px;
 }
+#navbar-area .container .btn li:hover .categori {
+  height: 320px;
+  width: 800px;
+}
 #navbar-area .container .btn li:hover a::before {
   visibility: visible;
   transform: scale(1, 1);
@@ -158,19 +162,259 @@
   height: 0;
   width: 150px;
   line-height: 40px;
-  text-align: left;
   transition: height 0.3s ease-in-out;
   transition-delay: 0.1s;
   text-align: left;
-  padding-left: 0px;
+  padding-left: 15px;
+  border-radius: 5px;
 }
 #navbar-area .container .btn li .submenu a {
   color: #000;
   font-size: 16px;
   text-decoration: none;
 }
+#navbar-area .container .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 0;
+  line-height: 30px;
+  text-align: left;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -200px;
+  border-radius: 10px;
+}
+#navbar-area .container .btn li .categori table td {
+  border: none;
+}
+#navbar-area .container .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+#navbar-area .container .btn li .categori table th:hover {
+  color: #000;
+}
 #navbar-area .container .btn h1 {
   text-align: center;
   font-family: satisfy;
   font-weight: 300;
+}
+
+#collection {
+  background-color: #F3F3F4;
+  padding-top: 80px;
+}
+#collection img {
+  filter: brightness(0.5);
+}
+#collection .swiper {
+  width: 100%;
+  height: 100%;
+}
+#collection .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#collection .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#collection .swiper .swiper-slide p {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: 115px;
+}
+#collection .swiper .swiper-slide h1 {
+  color: white;
+  position: absolute;
+  font-size: 90px;
+  top: 160px;
+}
+#collection .swiper .swiper-slide .my-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: white;
+  position: absolute;
+  bottom: 80px;
+}
+
+#info {
+  padding-top: 100px;
+  background-color: #F3F3F4;
+}
+#info .card {
+  width: 100%;
+  height: 140px;
+  box-shadow: 3px 3px 10px grey;
+  margin-bottom: 100px;
+}
+#info .card h5 {
+  font-weight: bold;
+  margin-top: 30px;
+  padding-left: 120px;
+}
+#info .card p {
+  padding-left: 120px;
+}
+#info .card .icon {
+  width: 86px;
+  height: 86px;
+  background-color: #283593;
+  border-radius: 50%;
+  position: absolute;
+  top: -43px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#info .card .icon i {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+}
+
+#cards {
+  background-color: #F3F3F4;
+}
+#cards img {
+  filter: brightness(0.5);
+}
+#cards .first-card {
+  height: 420px;
+  position: relative;
+}
+#cards .first-card .card-info {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+}
+#cards .first-card .card-info h4 {
+  font-weight: bold;
+  color: white;
+}
+#cards .first-card .card-info p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+#cards .first-card .card-info .my-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: white;
+  position: absolute;
+}
+#cards .first-card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+#cards .card {
+  height: 200px;
+  border: none;
+}
+#cards .card img {
+  height: 100%;
+  border-radius: 10px;
+}
+#cards .card .card-info {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+}
+#cards .card .card-info h4 {
+  font-weight: bold;
+  color: white;
+}
+#cards .card .card-info p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+#cards .card .card-info .my-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: white;
+  position: absolute;
+}
+#cards .last-card {
+  position: relative;
+}
+#cards .last-card .card-info {
+  position: absolute;
+  left: 180px;
+}
+#cards .change-card {
+  top: 20px;
+}
+
+#category {
+  background-color: #F3F3F4;
+}
+#category p:nth-child(1) {
+  margin-top: 130px;
+  font-size: 30px;
+}
+#category .product {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  position: relative;
+}
+#category .product img {
+  width: 100%;
+  border-radius: 8px;
+  filter: brightness(0.5);
+}
+#category .product .product-info {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  line-height: 20px;
+}
+#category .product .product-info h4, #category .product .product-info p {
+  font-weight: bold;
+  color: white;
+}
+
+#new-products {
+  margin-bottom: 100px;
+}
+#new-products .background {
+  background-color: #000;
+  height: 300px;
+}
+#new-products h4 {
+  padding-top: 80px;
+  color: white;
+}
+#new-products .tab-header {
+  display: flex;
+  align-items: center;
+}
+#new-products .tab-header div h4 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 100%;
+  padding: 5px 10px 0 10px;
 }/*# sourceMappingURL=home.css.map */
