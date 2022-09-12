@@ -122,6 +122,7 @@
   display: inline-block;
   transition: all 0.3s ease-in-out;
   margin-right: 25px;
+  z-index: 2;
 }
 #navbar-area .container .btn li .nav-a {
   color: white;
@@ -148,12 +149,11 @@
   z-index: 2;
 }
 #navbar-area .container .btn li:hover .submenu {
-  height: 200px;
+  height: 160px;
   z-index: 2;
 }
 #navbar-area .container .btn li:hover .categori {
   height: 250px;
-  width: 800px;
   z-index: 2;
 }
 #navbar-area .container .btn li:hover a::before {
@@ -204,7 +204,7 @@
   margin-top: 10px;
   background-color: white;
   height: 0;
-  width: 0;
+  width: 800px;
   line-height: 30px;
   text-align: left;
   transition: height 0.3s ease-in-out;
@@ -224,6 +224,150 @@
   color: #000;
 }
 #navbar-area .container .btn h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+
+#scroll-section {
+  background-color: #283593;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+#scroll-section .inActive {
+  display: none;
+}
+#scroll-section .head {
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#scroll-section .head img {
+  position: absolute;
+  color: white !important;
+}
+#scroll-section nav {
+  float: right;
+}
+#scroll-section .btn {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#scroll-section .btn .admin {
+  background-color: #FF5722;
+  width: 125px;
+  height: 60px;
+  padding-top: 4px;
+  margin-right: 0;
+}
+#scroll-section .btn li {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+}
+#scroll-section .btn li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+#scroll-section .btn li .nav-a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0px;
+  background-color: #FF5722;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0, 0);
+  visibility: hidden;
+}
+#scroll-section .btn li:hover .home {
+  height: 120px;
+}
+#scroll-section .btn li:hover .submenu {
+  height: 200px;
+}
+#scroll-section .btn li:hover .categori {
+  height: 250px;
+}
+#scroll-section .btn li:hover a::before {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+#scroll-section .btn li .home {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+#scroll-section .btn li .home a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#scroll-section .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+#scroll-section .btn li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#scroll-section .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 800px;
+  line-height: 30px;
+  text-align: left;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -220px;
+  border-radius: 10px;
+}
+#scroll-section .btn li .categori table td {
+  border: none;
+}
+#scroll-section .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+#scroll-section .btn li .categori table th:hover {
+  color: #000;
+}
+#scroll-section .btn h1 {
   text-align: center;
   font-family: satisfy;
   font-weight: 300;
@@ -269,7 +413,7 @@
   top: 160px;
 }
 #collection .swiper .swiper-slide .my-btn {
-  width: 100px;
+  width: 110px;
   height: 40px;
   border-radius: 7px;
   border: none;
@@ -339,7 +483,7 @@
   font-weight: bold;
 }
 #cards .first-card .card-info .my-btn {
-  width: 100px;
+  width: 110px;
   height: 40px;
   border-radius: 7px;
   border: none;
@@ -374,7 +518,7 @@
   font-weight: bold;
 }
 #cards .card .card-info .my-btn {
-  width: 100px;
+  width: 110px;
   height: 40px;
   border-radius: 7px;
   border: none;
@@ -460,7 +604,7 @@
   color: white;
 }
 #sunglasses .image .image-info .my-btn {
-  width: 100px;
+  width: 110px;
   height: 40px;
   border-radius: 7px;
   border: none;
@@ -468,15 +612,21 @@
 }
 
 #subscribe {
-  background-color: #F3F3F4;
+  background-color: #283593;
+  position: relative;
+}
+#subscribe .main {
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 #subscribe .main .success-icon {
   background-color: white;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  position: absolute;
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   top: -50px;
@@ -484,4 +634,98 @@
 #subscribe .main .success-icon i {
   position: absolute;
   font-size: 40px;
+}
+#subscribe .main .my-newsletter {
+  padding: 70px 0;
+}
+#subscribe .main .my-newsletter h2 {
+  margin-bottom: 0 !important;
+  color: white;
+  font-size: 35px;
+}
+#subscribe .main .my-newsletter span {
+  padding: 20px 0;
+  display: block;
+  color: white;
+}
+#subscribe .main .my-newsletter input {
+  background-color: #283593;
+  border-color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  color: white;
+  width: 90%;
+}
+#subscribe .main .my-newsletter input::-moz-placeholder {
+  color: white;
+}
+#subscribe .main .my-newsletter input:-ms-input-placeholder {
+  color: white;
+}
+#subscribe .main .my-newsletter input::placeholder {
+  color: white;
+}
+#subscribe .main .my-newsletter button {
+  border: none;
+  background: none;
+  font-size: 22px;
+  color: white;
+}
+
+#download {
+  background-color: #F3F3F4;
+  padding: 20px;
+}
+#download p {
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+}
+#download i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+#download .apple {
+  text-align: center;
+  border-right: 1px solid black;
+  padding: 30px 0;
+}
+#download .android {
+  text-align: center;
+  padding: 30px 0;
+}
+
+#fotter {
+  background-color: #000;
+  padding-top: 60px;
+}
+#fotter h5 {
+  color: white;
+  margin-bottom: 30px;
+}
+#fotter span {
+  color: white;
+}
+#fotter p {
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 17px;
+}
+#fotter p:hover {
+  color: brown;
+}
+#fotter .line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 20px 0;
+}
+#fotter .mastercards {
+  margin-bottom: 30px;
+}
+#fotter .mastercards span {
+  float: right;
 }/*# sourceMappingURL=home.css.map */
