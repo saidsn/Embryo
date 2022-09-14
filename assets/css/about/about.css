@@ -70,6 +70,10 @@
   font-size: 20px;
   position: absolute;
 }
+#top-area .icons div:nth-child(1),
+#top-area .icons div:nth-child(2) {
+  background-color: #FF5722;
+}
 
 #navbar-area {
   background-color: #283593;
@@ -345,16 +349,16 @@
   font-weight: 300;
 }
 
-#product {
+#about {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../../images/product/accesserious-background.jpg);
+  background-image: url(../../images/accessories/accesserious-background.jpg);
   height: 344px;
   margin-bottom: 70px;
 }
-#product .search {
+#about .search {
   width: 60px;
   height: 60px;
   background-color: #FF5722;
@@ -367,208 +371,214 @@
   right: 110px;
   top: -30px;
 }
-#product .search i {
+#about .search i {
   color: white;
   font-size: 20px;
 }
-#product .background-info {
+#about .background-info {
   text-align: center;
   line-height: 60px;
 }
-#product .background-info h2 {
-  font-size: 60px;
+#about .background-info h2 {
+  font-size: 55px;
+  color: white;
+}
+#about .background-info p {
+  font-size: 25px;
   color: white;
 }
 
-#about-product {
+#commerce {
   margin-bottom: 70px;
 }
-#about-product #main-option {
-  display: flex;
-  width: 100%;
-  margin: auto;
+#commerce h1 {
+  margin-top: 70px;
+  font-size: 50px;
+  color: #000;
 }
-#about-product #main-option #option-second img {
-  width: 500px;
-  height: 700px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+#commerce h4 {
+  margin-top: 20px;
+  color: #000;
+  margin-bottom: 25px;
 }
-#about-product #main-option #option-three {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
-}
-#about-product #main-option #option-three img {
-  width: 90%;
-  border-radius: 0.8rem;
-  height: 120px;
-  cursor: pointer;
-}
-#about-product p:nth-child(1) {
-  color: #283593;
-  cursor: pointer;
-}
-#about-product p:nth-child(1):hover {
-  color: red;
-}
-#about-product a {
-  color: black;
-}
-#about-product h3 {
-  color: red;
-}
-#about-product .select select {
-  margin-right: 5px;
-  width: 190px;
-  outline: none;
-  border: 0 solid #fff;
-  border-bottom: 2px solid rgb(234, 230, 230);
-  cursor: pointer;
-}
-#about-product .select select:hover {
-  border-bottom: 2px solid black;
-}
-#about-product .btn-one {
-  width: 150px;
+#commerce .my-btn {
+  width: 180px;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   margin-right: 20px;
   color: white;
+  margin-top: 40px;
   background-color: #FF5722;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
-#about-product .btn-second {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  background-color: white;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product .social {
-  display: flex;
-}
-#about-product .social span {
-  margin-right: 20px;
-  margin-top: 10px;
-}
-#about-product .social ion-icon {
-  font-size: 17px;
-  border-radius: 50%;
-  padding: 10px;
-  margin-left: 10px;
-  color: white;
-  cursor: pointer;
-  background-color: blue;
-  border: 2px solid blue;
-  transition: 0.5s;
-}
-#about-product .social ion-icon:hover {
-  background-color: white;
-  transition: 0.5s;
-  color: blue;
+#commerce .my-btn:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-#cards {
+#mission {
+  padding-top: 70px;
   background-color: #F3F3F4;
-  padding-bottom: 50px;
 }
-#cards .head {
-  margin-top: 60px;
-  margin-bottom: 30px;
+#mission img {
+  width: 100%;
+}
+#mission h1 {
+  margin-top: 120px;
+  color: #000;
+}
+#mission h5 {
+  margin: 20px 0;
+  color: #000;
+}
+
+#vision {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  background-color: #F3F3F4;
+}
+#vision img {
+  width: 100%;
+}
+#vision h1 {
+  margin-top: 120px;
+  color: #000;
+}
+#vision h5 {
+  margin: 20px 0;
+  color: #000;
+}
+
+#awesome {
+  background-image: url(../../images/about/awesome.jpg);
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-#cards .my-card {
-  width: 100% !important;
-  margin: 30px 0;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+#awesome h1 {
+  font-size: 50px;
+  color: white;
 }
-#cards .my-card:hover .fa-cart-shopping {
-  transform: translateY(-30px);
-  transition: 0.3s;
-}
-#cards .my-card .image {
-  width: 100%;
-  height: 370px;
+#awesome .carousell-section {
+  width: 800px;
+  height: 320px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid rgb(234, 230, 230);
+  margin-top: 60px;
 }
-#cards .my-card .image img {
-  height: 100%;
-  cursor: pointer;
-}
-#cards .my-card .image i {
-  position: absolute;
-  font-size: 25px;
-  color: #999999;
-  right: 15px;
-  top: 15px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-#cards .my-card .image i:hover {
-  color: black;
-  transition: 0.5s;
-}
-#cards .my-card .card-bottom {
+#awesome .carousell-section .swiper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
   position: relative;
 }
-#cards .my-card .card-bottom h5 {
-  margin-top: 15px;
-  transition: 1s;
-  cursor: pointer;
-}
-#cards .my-card .card-bottom h5:hover {
-  color: #FF5722;
-  transition: 0.3s;
-}
-#cards .my-card .card-bottom h6 {
-  display: inline;
-  color: #FF5722;
-  font-size: 18px;
-}
-#cards .my-card .card-bottom ion-icon:nth-last-child(5) {
-  color: #999999;
-}
-#cards .my-card .card-bottom ion-icon {
-  color: #EDB867;
-  font-size: 25px;
-  right: 100px;
-  float: right;
-}
-#cards .my-card .card-bottom i {
+#awesome .carousell-section .swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 18px;
+}
+#awesome .carousell-section .swiper .swiper-slide h5 {
+  margin-top: 20px;
+}
+#awesome .carousell-section .swiper .swiper-slide img {
+  display: block;
+  width: 170px !important;
+  height: 170px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 50%;
-  background-color: #FF5722;
-  right: 15px;
-  top: -30px;
-  cursor: pointer;
-  transition: 0.3s;
 }
-#cards .button {
+
+#meet {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-color: #F3F3F4;
+}
+#meet h1 {
   text-align: center;
-  margin-top: 30px;
+  margin-bottom: 70px;
+  color: #000;
 }
-#cards .button button {
-  width: 100px;
-  height: 40px;
+#meet .image {
+  text-align: center;
+}
+#meet .image img {
+  border-radius: 50%;
+}
+#meet .image .image-info {
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+#register .register {
+  margin-top: 60px;
+}
+#register .register h1 {
+  margin-bottom: 60px;
+}
+#register .register label {
+  position: relative;
+  display: inline-block;
+}
+#register .register span {
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+}
+#register .register input {
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 600px;
   border: none;
-  border-radius: 5px;
-  background-color: white;
+  outline: none;
+  border-bottom: 2px solid gray;
+}
+#register .register input:hover {
+  border-bottom: 2px solid blue;
+}
+#register .register input:not(:-moz-placeholder-shown) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+#register .register input:not(:-ms-input-placeholder) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+#register .register input:focus + span,
+#register .register input:not(:placeholder-shown) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+#register .register input:focus + span,
+#register .register input:not(:-ms-input-placeholder) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+#register .register button {
+  width: 180px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  margin-right: 20px;
+  color: white;
+  margin-top: 40px;
+  background-color: #FF5722;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#register .register button:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 #footer {
@@ -602,4 +612,4 @@
 }
 #footer .mastercards span {
   float: right;
-}/*# sourceMappingURL=product.css.map */
+}/*# sourceMappingURL=about.css.map */
