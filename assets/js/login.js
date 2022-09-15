@@ -16,25 +16,16 @@ $(function () {
 
 });
 
+$("input").focus(function () {
+    $(this).parents(".form-group").addClass("focused");
+});
 
-
-
-
-var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 5,
-    loop: true,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+$("input").blur(function () {
+    var inputValue = $(this).val();
+    if (inputValue == "") {
+        $(this).removeClass("filled");
+        $(this).parents(".form-group").removeClass("focused");
+    } else {
+        $(this).addClass("filled");
     }
 });

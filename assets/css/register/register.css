@@ -70,6 +70,10 @@
   font-size: 20px;
   position: absolute;
 }
+#top-area .icons div:nth-child(1),
+#top-area .icons div:nth-child(2) {
+  background-color: #FF5722;
+}
 
 #navbar-area {
   background-color: #283593;
@@ -364,218 +368,111 @@
   font-weight: 300;
 }
 
-#product {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../../images/product/accesserious-background.jpg);
-  height: 344px;
-  margin-bottom: 70px;
-}
-#product .background-info {
-  text-align: center;
-  line-height: 60px;
-}
-#product .background-info h2 {
-  font-size: 60px;
-  color: white;
-}
-
-#about-product {
-  margin-bottom: 70px;
-}
-#about-product #main-option {
-  display: flex;
-  width: 100%;
-  margin: auto;
-}
-#about-product #main-option #option-second img {
-  width: 500px;
-  height: 700px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product #main-option #option-three {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
-}
-#about-product #main-option #option-three img {
-  width: 90%;
-  border-radius: 0.8rem;
-  height: 120px;
-  cursor: pointer;
-}
-#about-product p:nth-child(1) {
-  color: #283593;
-  cursor: pointer;
-}
-#about-product p:nth-child(1):hover {
-  color: red;
-}
-#about-product a {
-  color: black;
-}
-#about-product h3 {
-  color: red;
-}
-#about-product .select select {
-  margin-right: 5px;
-  width: 190px;
-  outline: none;
-  border: 0 solid #fff;
-  border-bottom: 2px solid rgb(234, 230, 230);
-  cursor: pointer;
-}
-#about-product .select select:hover {
-  border-bottom: 2px solid black;
-}
-#about-product .btn-one {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  margin-right: 20px;
-  color: white;
-  background-color: #FF5722;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product .btn-second {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  background-color: white;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product .social {
-  display: flex;
-}
-#about-product .social span {
-  margin-right: 20px;
-  margin-top: 10px;
-}
-#about-product .social ion-icon {
-  font-size: 17px;
-  border-radius: 50%;
-  padding: 10px;
-  margin-left: 10px;
-  color: white;
-  cursor: pointer;
-  background-color: blue;
-  border: 2px solid blue;
-  transition: 0.5s;
-}
-#about-product .social ion-icon:hover {
-  background-color: white;
-  transition: 0.5s;
-  color: blue;
-}
-
-#cards {
-  background-color: #F3F3F4;
+#register {
+  padding-top: 80px;
   padding-bottom: 50px;
 }
-#cards .head {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-#cards .my-card {
-  width: 100% !important;
-  margin: 30px 0;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#cards .my-card:hover .fa-cart-shopping {
-  transform: translateY(-30px);
-  transition: 0.3s;
-}
-#cards .my-card .image {
+#register .main {
   width: 100%;
-  height: 370px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid rgb(234, 230, 230);
-}
-#cards .my-card .image img {
-  height: 100%;
-  cursor: pointer;
-}
-#cards .my-card .image i {
-  position: absolute;
-  font-size: 25px;
-  color: #999999;
-  right: 15px;
-  top: 15px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-#cards .my-card .image i:hover {
-  color: black;
-  transition: 0.5s;
-}
-#cards .my-card .card-bottom {
   position: relative;
+  align-items: center;
 }
-#cards .my-card .card-bottom h5 {
-  margin-top: 15px;
-  transition: 1s;
-  cursor: pointer;
+#register .main .image {
+  width: 50%;
+  height: 576px;
+  background-size: 543.75px 576px;
+  background-image: url(../../images/register/register-image.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
 }
-#cards .my-card .card-bottom h5:hover {
-  color: #FF5722;
-  transition: 0.3s;
-}
-#cards .my-card .card-bottom h6 {
-  display: inline;
-  color: #FF5722;
-  font-size: 18px;
-}
-#cards .my-card .card-bottom ion-icon:nth-last-child(5) {
-  color: #999999;
-}
-#cards .my-card .card-bottom ion-icon {
-  color: #EDB867;
-  font-size: 25px;
-  right: 100px;
-  float: right;
-}
-#cards .my-card .card-bottom i {
-  color: white;
-  font-size: 20px;
+#register .main .sign-in {
   position: absolute;
-  padding: 18px;
-  border-radius: 50%;
-  background-color: #FF5722;
-  right: 15px;
-  top: -30px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-#cards .button {
-  text-align: center;
-  margin-top: 30px;
-}
-#cards .button button {
-  width: 100px;
-  height: 40px;
-  border: none;
+  padding-left: 50px;
+  padding-top: 20px;
+  width: 500px;
+  height: 505px;
+  margin-left: -50px;
+  position: relative;
   border-radius: 5px;
   background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#register .main .sign-in h3 {
+  margin-bottom: 15px;
+}
+#register .main .sign-in label {
+  position: relative;
+  display: inline-block;
+}
+#register .main .sign-in span {
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+}
+#register .main .sign-in input {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 400px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid gray;
+}
+#register .main .sign-in input:hover {
+  border-bottom: 2px solid blue;
+}
+#register .main .sign-in input:not(:-moz-placeholder-shown) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-60%) translateX(-20px);
+}
+#register .main .sign-in input:not(:-ms-input-placeholder) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-60%) translateX(-20px);
+}
+#register .main .sign-in input:focus + span,
+#register .main .sign-in input:not(:placeholder-shown) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-60%) translateX(-20px);
+}
+#register .main .sign-in input:focus + span,
+#register .main .sign-in input:not(:-ms-input-placeholder) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+#register .main .sign-in button {
+  width: 180px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  margin-right: 20px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: #FF5722;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#register .main .sign-in button:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+#register .main .sign-in a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+#register .main .sign-in a:hover {
+  color: #FF5722;
+  transition: 0.3s;
 }
 
 #footer {
   background-color: #000;
   padding: 60px;
+  margin-top: 30px;
 }
 #footer h5 {
   color: white;
@@ -604,4 +501,4 @@
 }
 #footer .mastercards span {
   float: right;
-}/*# sourceMappingURL=product.css.map */
+}/*# sourceMappingURL=register.css.map */

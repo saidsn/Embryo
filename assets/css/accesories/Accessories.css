@@ -81,6 +81,25 @@
 #navbar-area .container nav {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+#navbar-area .container nav .search {
+  width: 60px;
+  height: 60px;
+  background-color: #FF5722;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  bottom: -30px;
+  z-index: 2;
+}
+#navbar-area .container nav .search i {
+  color: white;
+  font-size: 20px;
 }
 #navbar-area .container .btn {
   display: flex;
@@ -357,23 +376,6 @@
   background-image: url(../../images/accessories/accesserious-background.jpg);
   height: 344px;
   margin-bottom: 70px;
-}
-#accessories .search {
-  width: 60px;
-  height: 60px;
-  background-color: #FF5722;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  cursor: pointer;
-  right: 110px;
-  top: -30px;
-}
-#accessories .search i {
-  color: white;
-  font-size: 20px;
 }
 #accessories .background-info {
   text-align: center;

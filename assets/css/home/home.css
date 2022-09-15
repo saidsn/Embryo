@@ -697,6 +697,22 @@
   font-size: 30px;
 }
 
+@media only screen and (max-width: 992px) {
+  #sunglasses .image .image-info i {
+    font-size: 20px !important;
+  }
+  #sunglasses .image .image-info h3 {
+    font-size: 20px !important;
+    margin-top: 10px;
+  }
+  #sunglasses .image .image-info p {
+    font-size: 25px !important;
+  }
+  #sunglasses .image .image-info .my-btn {
+    width: 80px !important;
+    height: 20px !important;
+  }
+}
 #sunglasses {
   background-color: white;
   margin-top: 400px;

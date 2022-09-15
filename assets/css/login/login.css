@@ -70,6 +70,10 @@
   font-size: 20px;
   position: absolute;
 }
+#top-area .icons div:nth-child(1),
+#top-area .icons div:nth-child(2) {
+  background-color: #FF5722;
+}
 
 #navbar-area {
   background-color: #283593;
@@ -364,218 +368,115 @@
   font-weight: 300;
 }
 
-#product {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../../images/product/accesserious-background.jpg);
-  height: 344px;
-  margin-bottom: 70px;
-}
-#product .background-info {
-  text-align: center;
-  line-height: 60px;
-}
-#product .background-info h2 {
-  font-size: 60px;
-  color: white;
-}
-
-#about-product {
-  margin-bottom: 70px;
-}
-#about-product #main-option {
-  display: flex;
-  width: 100%;
-  margin: auto;
-}
-#about-product #main-option #option-second img {
-  width: 500px;
-  height: 700px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product #main-option #option-three {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
-}
-#about-product #main-option #option-three img {
-  width: 90%;
-  border-radius: 0.8rem;
-  height: 120px;
-  cursor: pointer;
-}
-#about-product p:nth-child(1) {
-  color: #283593;
-  cursor: pointer;
-}
-#about-product p:nth-child(1):hover {
-  color: red;
-}
-#about-product a {
-  color: black;
-}
-#about-product h3 {
-  color: red;
-}
-#about-product .select select {
-  margin-right: 5px;
-  width: 190px;
-  outline: none;
-  border: 0 solid #fff;
-  border-bottom: 2px solid rgb(234, 230, 230);
-  cursor: pointer;
-}
-#about-product .select select:hover {
-  border-bottom: 2px solid black;
-}
-#about-product .btn-one {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  margin-right: 20px;
-  color: white;
-  background-color: #FF5722;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product .btn-second {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  background-color: white;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product .social {
-  display: flex;
-}
-#about-product .social span {
-  margin-right: 20px;
-  margin-top: 10px;
-}
-#about-product .social ion-icon {
-  font-size: 17px;
-  border-radius: 50%;
-  padding: 10px;
-  margin-left: 10px;
-  color: white;
-  cursor: pointer;
-  background-color: blue;
-  border: 2px solid blue;
-  transition: 0.5s;
-}
-#about-product .social ion-icon:hover {
-  background-color: white;
-  transition: 0.5s;
-  color: blue;
-}
-
-#cards {
-  background-color: #F3F3F4;
+#login {
+  padding-top: 80px;
   padding-bottom: 50px;
 }
-#cards .head {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-#cards .my-card {
-  width: 100% !important;
-  margin: 30px 0;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#cards .my-card:hover .fa-cart-shopping {
-  transform: translateY(-30px);
-  transition: 0.3s;
-}
-#cards .my-card .image {
+#login .main {
   width: 100%;
-  height: 370px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid rgb(234, 230, 230);
-}
-#cards .my-card .image img {
-  height: 100%;
-  cursor: pointer;
-}
-#cards .my-card .image i {
-  position: absolute;
-  font-size: 25px;
-  color: #999999;
-  right: 15px;
-  top: 15px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-#cards .my-card .image i:hover {
-  color: black;
-  transition: 0.5s;
-}
-#cards .my-card .card-bottom {
   position: relative;
+  align-items: center;
 }
-#cards .my-card .card-bottom h5 {
-  margin-top: 15px;
-  transition: 1s;
-  cursor: pointer;
+#login .main .image {
+  width: 50%;
+  height: 576px;
+  background-size: 543.75px 576px;
+  background-image: url(../../images/login/login-image.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
 }
-#cards .my-card .card-bottom h5:hover {
-  color: #FF5722;
-  transition: 0.3s;
-}
-#cards .my-card .card-bottom h6 {
-  display: inline;
-  color: #FF5722;
-  font-size: 18px;
-}
-#cards .my-card .card-bottom ion-icon:nth-last-child(5) {
-  color: #999999;
-}
-#cards .my-card .card-bottom ion-icon {
-  color: #EDB867;
-  font-size: 25px;
-  right: 100px;
-  float: right;
-}
-#cards .my-card .card-bottom i {
-  color: white;
-  font-size: 20px;
+#login .main .sign-in {
   position: absolute;
-  padding: 18px;
-  border-radius: 50%;
-  background-color: #FF5722;
-  right: 15px;
-  top: -30px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-#cards .button {
-  text-align: center;
-  margin-top: 30px;
-}
-#cards .button button {
-  width: 100px;
-  height: 40px;
-  border: none;
+  padding-left: 50px;
+  padding-top: 40px;
+  width: 500px;
+  height: 379px;
+  margin-left: -50px;
+  position: relative;
   border-radius: 5px;
   background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#login .main .sign-in h3 {
+  margin-bottom: 15px;
+}
+#login .main .sign-in .form {
+  display: flex;
+  align-items: baseline;
+}
+#login .main .sign-in .form-group {
+  position: relative;
+}
+#login .main .sign-in .form-group + .form-group {
+  margin-top: 30px;
+}
+#login .main .sign-in .form-label {
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  color: grey;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+  cursor: auto;
+}
+#login .main .sign-in .focused .form-label {
+  transform: translateY(-125%);
+  font-size: 0.75em;
+}
+#login .main .sign-in .form-group {
+  width: 100%;
+}
+#login .main .sign-in .form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 90%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid grey;
+  background-color: transparent;
+  transition: box-shadow 150ms ease-out;
+  caret-color: white;
+  color: white;
+}
+#login .main .sign-in .form-input:focus {
+  box-shadow: 0 1px 0 0 blue;
+}
+#login .main .sign-in .input {
+  margin-right: 15px;
+  width: 17px;
+  height: 17px;
+}
+#login .main .sign-in .password {
+  position: absolute;
+  right: 40px;
+}
+#login .main .sign-in a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+#login .main .sign-in a:hover {
+  color: red;
+  transition: 0.3s;
+}
+#login .main .sign-in button {
+  width: 150px;
+  height: 45px;
+  margin: 20px 0;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  background-color: #FF5722;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#login .main .sign-in button:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 #footer {
   background-color: #000;
   padding: 60px;
+  margin-top: 30px;
 }
 #footer h5 {
   color: white;
@@ -604,4 +505,4 @@
 }
 #footer .mastercards span {
   float: right;
-}/*# sourceMappingURL=product.css.map */
+}/*# sourceMappingURL=login.css.map */

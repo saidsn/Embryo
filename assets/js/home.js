@@ -22,10 +22,10 @@ $(function () {
    }
 
 
-  
-
-
 });
+
+
+
 function openTabMenu(evt, TabMenu) {
    var i, tabcontent, tablinks;
    tabcontent = document.getElementsByClassName("tabcontent");
@@ -61,6 +61,12 @@ var swiper1 = new Swiper("#tab-menu .mySwiper1", {
    spaceBetween: 30,
  });
 
+
+
+
+
+
+ 
  var swiper = new Swiper(".mySwiper2", {
    slidesPerView:5,
    loop:true,

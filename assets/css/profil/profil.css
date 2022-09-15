@@ -70,6 +70,10 @@
   font-size: 20px;
   position: absolute;
 }
+#top-area .icons div:nth-child(1),
+#top-area .icons div:nth-child(2) {
+  background-color: #FF5722;
+}
 
 #navbar-area {
   background-color: #283593;
@@ -364,218 +368,69 @@
   font-weight: 300;
 }
 
-#product {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../../images/product/accesserious-background.jpg);
-  height: 344px;
-  margin-bottom: 70px;
+#profil {
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
-#product .background-info {
-  text-align: center;
-  line-height: 60px;
-}
-#product .background-info h2 {
-  font-size: 60px;
-  color: white;
-}
-
-#about-product {
-  margin-bottom: 70px;
-}
-#about-product #main-option {
-  display: flex;
-  width: 100%;
-  margin: auto;
-}
-#about-product #main-option #option-second img {
-  width: 500px;
-  height: 700px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product #main-option #option-three {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
-}
-#about-product #main-option #option-three img {
-  width: 90%;
-  border-radius: 0.8rem;
-  height: 120px;
-  cursor: pointer;
-}
-#about-product p:nth-child(1) {
-  color: #283593;
-  cursor: pointer;
-}
-#about-product p:nth-child(1):hover {
-  color: red;
-}
-#about-product a {
-  color: black;
-}
-#about-product h3 {
-  color: red;
-}
-#about-product .select select {
-  margin-right: 5px;
-  width: 190px;
-  outline: none;
-  border: 0 solid #fff;
-  border-bottom: 2px solid rgb(234, 230, 230);
-  cursor: pointer;
-}
-#about-product .select select:hover {
-  border-bottom: 2px solid black;
-}
-#about-product .btn-one {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  margin-right: 20px;
-  color: white;
-  background-color: #FF5722;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product .btn-second {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  background-color: white;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#about-product .social {
-  display: flex;
-}
-#about-product .social span {
-  margin-right: 20px;
-  margin-top: 10px;
-}
-#about-product .social ion-icon {
-  font-size: 17px;
+#profil .image img {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  padding: 10px;
-  margin-left: 10px;
-  color: white;
-  cursor: pointer;
-  background-color: blue;
-  border: 2px solid blue;
-  transition: 0.5s;
+  margin-right: 20px;
 }
-#about-product .social ion-icon:hover {
-  background-color: white;
-  transition: 0.5s;
-  color: blue;
+#profil .image .image-info p {
+  color: gray;
 }
-
-#cards {
-  background-color: #F3F3F4;
-  padding-bottom: 50px;
-}
-#cards .head {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-#cards .my-card {
-  width: 100% !important;
-  margin: 30px 0;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-}
-#cards .my-card:hover .fa-cart-shopping {
-  transform: translateY(-30px);
-  transition: 0.3s;
-}
-#cards .my-card .image {
-  width: 100%;
-  height: 370px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid rgb(234, 230, 230);
-}
-#cards .my-card .image img {
-  height: 100%;
-  cursor: pointer;
-}
-#cards .my-card .image i {
-  position: absolute;
-  font-size: 25px;
-  color: #999999;
-  right: 15px;
-  top: 15px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-#cards .my-card .image i:hover {
-  color: black;
-  transition: 0.5s;
-}
-#cards .my-card .card-bottom {
-  position: relative;
-}
-#cards .my-card .card-bottom h5 {
+#profil .profil-info {
   margin-top: 15px;
-  transition: 1s;
-  cursor: pointer;
+  width: 100%;
+  height: 420px;
+  padding-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
-#cards .my-card .card-bottom h5:hover {
-  color: #FF5722;
-  transition: 0.3s;
+#profil .profil-info .icon {
+  margin-left: 45px;
+  margin-top: 20px;
 }
-#cards .my-card .card-bottom h6 {
-  display: inline;
-  color: #FF5722;
-  font-size: 18px;
-}
-#cards .my-card .card-bottom ion-icon:nth-last-child(5) {
-  color: #999999;
-}
-#cards .my-card .card-bottom ion-icon {
-  color: #EDB867;
-  font-size: 25px;
-  right: 100px;
-  float: right;
-}
-#cards .my-card .card-bottom i {
-  color: white;
+#profil .profil-info .icon i {
   font-size: 20px;
-  position: absolute;
-  padding: 18px;
-  border-radius: 50%;
-  background-color: #FF5722;
-  right: 15px;
-  top: -30px;
-  cursor: pointer;
-  transition: 0.3s;
+  margin-right: 15px;
 }
-#cards .button {
-  text-align: center;
+#profil .profil-info .icon span {
+  font-size: 15px;
+}
+#profil .profil-information {
+  margin-top: 15px;
+  width: 100%;
+  height: 420px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  padding: 30px 30px;
+}
+#profil .profil-information .information {
+  display: flex;
   margin-top: 30px;
+  line-height: 20px;
 }
-#cards .button button {
-  width: 100px;
+#profil .profil-information .information .info-name {
+  margin-right: 50px;
+}
+#profil .profil-information button {
+  margin-top: 10px;
+  width: 80px;
   height: 40px;
   border: none;
+  color: white;
   border-radius: 5px;
-  background-color: white;
+  background-color: #FF5722;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 #footer {
   background-color: #000;
   padding: 60px;
+  margin-top: 30px;
 }
 #footer h5 {
   color: white;
@@ -604,4 +459,4 @@
 }
 #footer .mastercards span {
   float: right;
-}/*# sourceMappingURL=product.css.map */
+}/*# sourceMappingURL=profil.css.map */

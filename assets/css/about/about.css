@@ -81,6 +81,25 @@
 #navbar-area .container nav {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+#navbar-area .container nav .search {
+  width: 60px;
+  height: 60px;
+  background-color: #FF5722;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  bottom: -30px;
+  z-index: 2;
+}
+#navbar-area .container nav .search i {
+  color: white;
+  font-size: 20px;
 }
 #navbar-area .container .btn {
   display: flex;
@@ -358,23 +377,6 @@
   height: 344px;
   margin-bottom: 70px;
 }
-#about .search {
-  width: 60px;
-  height: 60px;
-  background-color: #FF5722;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  cursor: pointer;
-  right: 110px;
-  top: -30px;
-}
-#about .search i {
-  color: white;
-  font-size: 20px;
-}
 #about .background-info {
   text-align: center;
   line-height: 60px;
@@ -451,7 +453,7 @@
 
 #awesome {
   background-image: url(../../images/about/awesome.jpg);
-  height: 580px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
