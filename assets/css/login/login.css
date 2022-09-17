@@ -446,6 +446,14 @@
   margin-right: 15px;
   width: 17px;
   height: 17px;
+  cursor: pointer;
+}
+#login .main .sign-in .input:hover {
+  padding: 15px;
+  color: rgb(215, 228, 250);
+}
+#login .main .sign-in label {
+  cursor: pointer;
 }
 #login .main .sign-in .password {
   position: absolute;

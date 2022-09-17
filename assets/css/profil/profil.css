@@ -396,9 +396,11 @@
 #profil .profil-info .icon i {
   font-size: 20px;
   margin-right: 15px;
+  cursor: pointer;
 }
 #profil .profil-info .icon span {
   font-size: 15px;
+  cursor: pointer;
 }
 #profil .profil-information {
   margin-top: 15px;

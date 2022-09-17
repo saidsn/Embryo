@@ -532,6 +532,14 @@
                 margin-right: 15px;
                 width: 17px;
                 height: 17px;
+                cursor: pointer;
+                &:hover{
+                    padding: 15px;
+                    color: rgb(215, 228, 250);
+                }
+            }
+            label{
+                cursor: pointer;
             }
             .password{
                 position: absolute;

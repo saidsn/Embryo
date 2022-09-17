@@ -368,7 +368,7 @@
   font-weight: 300;
 }
 
-#accessories {
+#main-banner {
   position: relative;
   display: flex;
   justify-content: center;
@@ -376,15 +376,15 @@
   background-image: url(../../images/accessories/accesserious-background.jpg);
   height: 344px;
 }
-#accessories .background-info {
+#main-banner .background-info {
   text-align: center;
   line-height: 60px;
 }
-#accessories .background-info h2 {
+#main-banner .background-info h2 {
   font-size: 55px;
   color: white;
 }
-#accessories .background-info p {
+#main-banner .background-info p {
   font-size: 25px;
   color: white;
 }

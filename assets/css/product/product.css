@@ -364,7 +364,7 @@
   font-weight: 300;
 }
 
-#product {
+#main-banner {
   position: relative;
   display: flex;
   justify-content: center;
@@ -373,11 +373,11 @@
   height: 344px;
   margin-bottom: 70px;
 }
-#product .background-info {
+#main-banner .background-info {
   text-align: center;
   line-height: 60px;
 }
-#product .background-info h2 {
+#main-banner .background-info h2 {
   font-size: 60px;
   color: white;
 }
