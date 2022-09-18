@@ -70,8 +70,31 @@
                                 <i class="fa-solid fa-heart"><sup>0</sup></i>
                             </div>
                             <div>
-                                <img src="./assets/images/home-images/bill-gates.jpg.crdownload" alt="">
+                                <div class="dropdown ">
+                                    <a class="my-btn btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/images/home-images/bill-gates.jpg.crdownload" alt="">
+                                    </a>
 
+                                    <ul class="dropdown-menu drop-info" aria-labelledby="dropdownMenuLink">
+                                        <li>
+                                            <div class="info"><i class="fa-solid fa-user"></i><a class="dropdown-item"
+                                                    href="./profil.html">Profile</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="info"><i class="fa-solid fa-gear"></i><a class="dropdown-item"
+                                                    href="./login.html">Sign In</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="info"><i class="fa-solid fa-registered"></i><a
+                                                    class="dropdown-item" href="./register.html">Register</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="info"><i class="fa-solid fa-right-from-bracket"></i><a
+                                                    class="dropdown-item" href="#">Logout</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -86,7 +109,7 @@
         <section id="center-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="head">
                             <img src="./assets/images/home-images/embryo.png" alt="">
                         </div>
@@ -102,7 +125,6 @@
         </section>
 
         <section id="navbar-area">
-
             <nav class="navbar navbar-expand-lg navbar-dark  black-nav navbar-desktop">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -138,7 +160,7 @@
                                 <li><a class="nav-a" href="#">ACCESSORIES</a></li>
                                 <li>
                                     <a class="nav-a dropdown-btnn" href="#">CATEGORIES</a>
-                                    <ul class="categories submenu">
+                                    <ul class="categoriess submenu">
 
                                         <div class="product1">
                                             <h5 class="dropdown-h5 dropdown-btnn">MEN</h5>
@@ -349,9 +371,6 @@
                                             </tbody>
                                         </table>
                                     </ul>
-
-
-
                                 </li>
                                 <li> <a class="nav-a" href="#">ABOUT US</a> </li>
                                 <li><a class="nav-a" href="#">CONTACT US</a></li>
@@ -442,7 +461,7 @@
         <section id="cards">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="first-card">
                             <img src="./assets/images/home-images/card-1.jpg" alt="">
                             <div class="card-info">
@@ -454,7 +473,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card">
+                        <div class="card responsive-card">
                             <img src="./assets/images/home-images/card-2.jpg" alt="">
                             <div class="card-info">
                                 <h4>Mens Collections</h4>
@@ -473,7 +492,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card last-card">
+                        <div class="card responsive-card">
                             <img src="./assets/images/home-images/card-4.jpg" alt="">
                             <div class="card-info">
                                 <h4>Mens Collections</h4>
@@ -481,7 +500,7 @@
                                 <button type="button" class="my-btn">Shop Now</button>
                             </div>
                         </div>
-                        <div class="card change-card last-card">
+                        <div class="card change-card">
                             <img src="./assets/images/home-images/card-5.jpg" alt="">
                             <div class="card-info">
                                 <h4>Mens Collections</h4>
@@ -497,7 +516,9 @@
         <section id="category">
             <div class="container">
                 <div class="row">
-                    <p>Shop By Category</p>
+                    <div class="col-12">
+                        <p>Shop By Category</p>
+                    </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="product">
                             <img src="./assets/images/home-images/product-1.jpg" alt="">
@@ -540,7 +561,7 @@
 
         <section id="slider">
             <section id="tab-menu">
-                <div class="container my-5 ">
+                <div class="container">
                     <div class="row">
                         <h2>New Products</h2>
                         <div class="tab ">
@@ -553,9 +574,9 @@
 
                         <div id="Accessories" class="tabcontent " style="display: block;">
                             <div class="swiper mySwiper1">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="card swiper-slide" style="width: 18rem;">
+                                <div class="swiper-wrapper ">
+                                    <div class="swiper-slide  col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card swiper-slide" style="width: 18rem; ">
                                             <div class="price">
                                                 <p>$15.75</p>
                                             </div>
@@ -581,8 +602,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="card swiper-slide" style="width: 18rem;">
+                                    <div class="swiper-slide  col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card swiper-slide" style="width: 18rem; ">
                                             <div class="price">
                                                 <p>$38.31</p>
                                             </div>
@@ -608,8 +629,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="card swiper-slide" style="width: 18rem;">
+                                    <div class="swiper-slide col-lg-3 col-md-6 col-sm-12">
+                                        <div class=" card swiper-slide" style="width: 18rem;">
                                             <div class="price">
                                                 <p>$56.75</p>
                                             </div>
@@ -635,8 +656,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="card swiper-slide" style="width: 18rem;">
+                                    <div class="swiper-slide col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class=" card swiper-slide" style="width: 18rem;">
                                             <div class="price">
                                                 <p>$15.75</p>
                                             </div>
@@ -662,8 +683,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="card swiper-slide" style="width: 18rem;">
+                                    <div class="swiper-slide col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class=" card swiper-slide" style="width: 18rem;">
                                             <div class="price">
                                                 <p>$92.75</p>
                                             </div>
@@ -1162,10 +1183,15 @@
                             <div class="my-newsletter">
                                 <h2>Subscribe Our Newsletter</h2>
                                 <span>Stay up to date with our latest new and products</span>
-                                <input type="email" placeholder="Your Email Addressr">
-                                <button>
-                                    <ion-icon name="send-sharp"></ion-icon>
-                                </button>
+                                <form action="" class="form">
+                                    <div class="form-group">
+                                        <label class="form-label" for="first">Your Email Addressr *</label>
+                                        <input id="first" class="form-input" type="email" />
+                                        <button>
+                                            <ion-icon name="send-sharp"></ion-icon>
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -1199,7 +1225,7 @@
         <section id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="about-company">
                             <h5>ABOUT COMPANY</h5>
                             <span>
@@ -1209,7 +1235,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="about">
                             <h5>ABOUT</h5>
                             <p>about us</p>
@@ -1219,7 +1245,7 @@
                             <p>contact us</p>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="session">
                             <h5>SESSION</h5>
                             <p>sign in</p>
@@ -1228,7 +1254,7 @@
                             <p>thank you</p>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="categories">
                             <h5>CATEGORIES</h5>
                             <p>women</p>
@@ -1237,7 +1263,7 @@
                             <p>gadgets</p>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <div class="social">
                             <h5>SOCIAL</h5>
                             <p>facebook</p>

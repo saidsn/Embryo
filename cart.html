@@ -65,24 +65,48 @@
                     </div>
                     <div class="col-3">
                         <div class="icons">
-                            <div>
+                            <div class="bg-color">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <div class="sup">
                                     <sup>0</sup>
                                 </div>
                             </div>
-                            <div>
+                            <div class="bg-color">
                                 <i class="fa-solid fa-heart"></i>
                                 <div class="sup">
                                     <sup>0</sup>
                                 </div>
                             </div>
+   
 
                             <div>
-                                <img src="./assets/images/accessories/bill-gates.jpg.crdownload" alt="">
+                                <div class="dropdown ">
+                                    <a class=" my-drop btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/images/home-images/bill-gates.jpg.crdownload" alt="">
+                                    </a>
+
+                                    <ul class="dropdown-menu drop-info" aria-labelledby="dropdownMenuLink">
+                                        <li>
+                                            <div class="info"><i class="fa-solid fa-user "></i><a class="dropdown-item"
+                                                    href="./profil.html">Profile</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="info"><i class="fa-solid fa-gear"></i><a class="dropdown-item"
+                                                    href="./login.html">Sign In</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="info"><i class="fa-solid fa-registered"></i><a
+                                                    class="dropdown-item" href="./register.html">Register</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="info"><i class="fa-solid fa-right-from-bracket"></i><a
+                                                    class="dropdown-item" href="#">Logout</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -251,6 +275,8 @@
 
     </header>
 
+
+
     <main>
         <section id="main-banner">
 
@@ -259,6 +285,29 @@
                 <p>Our Latest News And Learning Articles.</p>
             </div>
         </section>
+
+        <section id="basket">
+            <div class="container">
+                <div class="row my-5">
+                    <h1 style="text-align: center;">Basket products</h1>
+                    <table class="table my-3">
+                        <thead>
+                          <tr>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Cost</th>
+                            <th scope="col">Count</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody class="table-body">
+                     
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </section>
+   
     </main>
  
 

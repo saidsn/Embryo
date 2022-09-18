@@ -1,23 +1,25 @@
 "use strict"
 $(function () {
 
+
+  let scrollSection = document.getElementById("scroll-section");
+   
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 195|| document.documentElement.scrollTop > 195) {
+       scrollSection.style.top = "0";
+    } else {
+       scrollSection.style.top = "-200px";
+       $("div").removeClass("inActive");
+    }
+  }
+
+
     let swiper = new Swiper(".mySwiper", {
         loop: true,
     })
-
-    let scrollSection = document.getElementById("scroll-section");
-   
-
-    window.onscroll = function() {scrollFunction()};
- 
-    function scrollFunction() {
-      if (document.body.scrollTop > 195|| document.documentElement.scrollTop > 195) {
-         scrollSection.style.top = "0";
-      } else {
-         scrollSection.style.top = "-200px";
-         $("div").removeClass("inActive");
-      }
-    }
 });
 
 
@@ -104,3 +106,20 @@ var swiper1 = new Swiper("#tab-menu .mySwiper1", {
        clickable:true,
    }
  });
+
+
+ $("input").focus(function () {
+  $(this).parents(".form-group").addClass("focused");
+});
+
+$("input").blur(function () {
+  var inputValue = $(this).val();
+  if (inputValue == "") {
+      $(this).removeClass("filled");
+      $(this).parents(".form-group").removeClass("focused");
+  } else {
+      $(this).addClass("filled");
+  }
+});
+
+

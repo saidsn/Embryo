@@ -34,6 +34,13 @@
   display: flex;
   float: right;
 }
+#top-area .icons .btn-secondary {
+  background-color: #333F98 !important;
+  border: none !important;
+}
+#top-area .icons .bg-color {
+  background-color: #FF5722;
+}
 #top-area .icons div {
   width: 45px;
   height: 45px;
@@ -43,7 +50,6 @@
   display: flex;
   cursor: pointer;
   margin-right: 5px;
-  background-color: #FF5722;
   border-radius: 50%;
 }
 #top-area .icons div .sup {
@@ -60,8 +66,10 @@
   margin-top: 10px;
 }
 #top-area .icons div img {
-  width: 100%;
-  height: 100%;
+  width: 45px;
+  height: 45px;
+  margin-top: -8px;
+  margin-left: -11px;
   border-radius: 50%;
   position: absolute;
 }
@@ -70,9 +78,26 @@
   font-size: 20px;
   position: absolute;
 }
-#top-area .icons div:nth-child(1),
-#top-area .icons div:nth-child(2) {
-  background-color: #FF5722;
+#top-area .icons div .drop-info {
+  margin-left: -50px !important;
+  margin-top: -50px !important;
+  transition: 0.3s;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#top-area .icons div .drop-info .info {
+  border: none !important;
+  display: flex;
+  cursor: pointer;
+}
+#top-area .icons div .drop-info .info .dropdown-item {
+  background-color: white;
+}
+#top-area .icons div .drop-info .info i {
+  color: #000;
+  background-color: none !important;
+}
+#top-area .icons div .drop-info .info a {
+  margin-left: 60px;
 }
 
 #navbar-area {
@@ -168,6 +193,7 @@
   text-align: left;
   padding-left: 15px;
   border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 #navbar-area .container .btn li .home a {
   color: #000;
@@ -180,13 +206,14 @@
   margin-top: 10px;
   background-color: white;
   height: 0;
-  width: 150px;
+  width: 185px;
   line-height: 40px;
   transition: height 0.3s ease-in-out;
   transition-delay: 0.1s;
   text-align: left;
   padding-left: 15px;
   border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 #navbar-area .container .btn li .submenu a {
   color: #000;
@@ -207,6 +234,7 @@
   text-align: left;
   margin-left: -200px;
   border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 #navbar-area .container .btn li .categori table td {
   border: none;
@@ -290,7 +318,7 @@
   height: 120px;
 }
 #scroll-section .btn li:hover .submenu {
-  height: 200px;
+  height: 160px;
 }
 #scroll-section .btn li:hover .categori {
   height: 250px;
@@ -312,6 +340,7 @@
   text-align: left;
   padding-left: 15px;
   border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 #scroll-section .btn li .home a {
   color: #000;
@@ -324,13 +353,14 @@
   margin-top: 10px;
   background-color: white;
   height: 0;
-  width: 150px;
+  width: 165px;
   line-height: 40px;
   transition: height 0.3s ease-in-out;
   transition-delay: 0.1s;
   text-align: left;
   padding-left: 15px;
   border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 #scroll-section .btn li .submenu a {
   color: #000;
@@ -351,6 +381,7 @@
   text-align: left;
   margin-left: -220px;
   border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 #scroll-section .btn li .categori table td {
   border: none;
@@ -416,7 +447,6 @@
   text-align: center;
   top: 10px;
   color: grey;
-  z-index: 10;
   transition: transform 150ms ease-out, font-size 150ms ease-out;
   cursor: auto;
 }
