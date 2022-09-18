@@ -34,6 +34,13 @@
   display: flex;
   float: right;
 }
+#top-area .container .icons .img-btn {
+  width: 50px;
+  background-color: #000;
+  border-bottom: none;
+  border-top: none;
+  border-radius: 0;
+}
 #top-area .container .icons div {
   width: 50px;
   height: 45px;
@@ -53,9 +60,9 @@
   border-radius: 50%;
   position: absolute;
 }
-#top-area .container .icons div i {
+#top-area .container .icons div a {
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
 }
 #top-area .container .icons div sup {
@@ -82,9 +89,11 @@
 }
 #top-area .container .icons div .drop-info .info i {
   color: #000;
+  margin-right: 10px;
 }
 #top-area .container .icons div .drop-info .info a {
   margin-left: 60px;
+  color: #000;
 }
 #top-area .container .icons div:nth-child(1) {
   border-left: none;

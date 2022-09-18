@@ -73,9 +73,9 @@
   border-radius: 50%;
   position: absolute;
 }
-#top-area .icons div i {
+#top-area .icons div a {
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
 }
 #top-area .icons div .drop-info {
@@ -98,6 +98,7 @@
 }
 #top-area .icons div .drop-info .info a {
   margin-left: 60px;
+  color: #000;
 }
 
 #navbar-area {

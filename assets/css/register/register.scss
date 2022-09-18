@@ -85,11 +85,12 @@
                 position: absolute;
             }
 
-            i {
+            a {
                 color: white;
-                font-size: 20px;
+                font-size: 17px;
                 position: absolute;
             }
+     
 
             .drop-info {
                 margin-left: -50px !important;
@@ -113,6 +114,7 @@
 
                     a {
                         margin-left: 60px;
+                        color: #000;
                     }
                 }
             }

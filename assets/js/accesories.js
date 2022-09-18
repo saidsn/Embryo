@@ -39,6 +39,7 @@ basketBtns.forEach(basketBtn => {
         let productId = parseInt(this.parentNode.parentNode.parentNode.getAttribute("product-id"));
 
         let existProduct = products.find(m => m.id == productId);
+        
         let deleteProduct = products.delete;
 
         if (existProduct != undefined) {
@@ -51,16 +52,6 @@ basketBtns.forEach(basketBtn => {
                 image: productImage,
                 count: 1,
             })
-
-            // Swal.fire({
-            //     position: "top-center",
-            //     icon: "success",
-            //     title: "Product added",
-            //     showConfirmButton: false,
-            //     timer: 1000,
-            //   });
-
-            
         }
         
 
