@@ -542,9 +542,6 @@
 #products .price .input::-moz-placeholder {
   color: black;
 }
-#products .price .input:-ms-input-placeholder {
-  color: black;
-}
 #products .price .input::placeholder {
   color: black;
 }

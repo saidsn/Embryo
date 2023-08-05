@@ -483,10 +483,6 @@
   opacity: 1;
   transform: scale(0.75) translateY(-100%) translateX(-30px);
 }
-#contact .register input:not(:-ms-input-placeholder) + span {
-  opacity: 1;
-  transform: scale(0.75) translateY(-100%) translateX(-30px);
-}
 #contact .register input:focus + span,
 #contact .register input:not(:placeholder-shown) + span {
   opacity: 1;

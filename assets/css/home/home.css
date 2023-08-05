@@ -882,8 +882,8 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/home-images/ebc.gif");
   background-repeat: no-repeat;
+  background-color: #cfcdcd;
   background-size: cover;
 }
 #sunglasses .image img {

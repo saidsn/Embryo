@@ -463,10 +463,6 @@
   opacity: 1;
   transform: scale(0.75) translateY(-60%) translateX(-20px);
 }
-#register .main .sign-in input:not(:-ms-input-placeholder) + span {
-  opacity: 1;
-  transform: scale(0.75) translateY(-60%) translateX(-20px);
-}
 #register .main .sign-in input:focus + span,
 #register .main .sign-in input:not(:placeholder-shown) + span {
   opacity: 1;
