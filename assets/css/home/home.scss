@@ -1126,7 +1126,7 @@
         position: relative;
         justify-content: center;
         align-items: center;
-        background-image: url("../../images/home-images/ebc.gif");
+        background-image: url("../../images/home-images/RPEK.gif");
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -1441,6 +1441,7 @@
 
         &:hover {
             color: brown;
+            transition: 0.3s;
         }
     }
 

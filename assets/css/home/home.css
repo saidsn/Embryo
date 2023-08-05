@@ -1145,6 +1145,7 @@
 }
 #footer p:hover {
   color: brown;
+  transition: 0.3s;
 }
 #footer .line {
   width: 100%;
